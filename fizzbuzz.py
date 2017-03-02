@@ -44,3 +44,23 @@ Fizz
 Fizz
 Buzz
 """
+
+numbers = 25   #input("How many numbers shall we print?")
+
+list3 = (1, 1000000)
+list5 = (1, 1000000)
+
+multipleslist3 = [a * 3 for a in list3]
+multipleslist5 = [b * 5 for b in list5]
+
+megamultipleslist = zip(multipleslist3, multipleslist5)
+
+mylist = range(1, int(numbers) + 1)
+
+while 
+
+
+
+
+
+
