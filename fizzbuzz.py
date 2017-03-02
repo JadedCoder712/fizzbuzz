@@ -59,11 +59,11 @@ mylist = range(1, int(numbers) + 1)
 
 
 for x in mylist:
-    if x in multipleslist3 and not multipleslist5:
+    if x in multipleslist3 and x not in multipleslist5:
         print("Fizz")
-    if x in multipleslist3 and multipleslist5:
+    elif x in multipleslist3 and x in multipleslist5:
         print("FizzBuzz")
-    if x not in multipleslist3 and not multipleslist5:
+    elif x not in multipleslist3 and x not in multipleslist5:
         print(x)
-    elif x in multipleslist5 and not multipleslist3:
+    elif x in multipleslist5 and x not in multipleslist3:
         print("Buzz")
