@@ -57,7 +57,11 @@ megamultipleslist = zip(multipleslist3, multipleslist5)
 
 mylist = range(1, int(numbers) + 1)
 
-while 
+while mylist == megamultipleslist:
+    print("hi")
+
+
+
 
 
 
