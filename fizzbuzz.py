@@ -45,13 +45,15 @@ Fizz
 Buzz
 """
 
-numbers = 25   #input("How many numbers shall we print?")
+numbers = input("How many numbers shall we print?")
+fizz = input("For multiples of what number shall we print'Fizz'? ")
+buzz = input("For multiples of what number shall we print 'Buzz'? ")
 
 list3 = range(1, 101)
 list5 = range(1, 101)
 
-multipleslist3 = [a * 3 for a in list3]
-multipleslist5 = [b * 5 for b in list5]
+multipleslist3 = [a * int(fizz) for a in list3]
+multipleslist5 = [b * int(buzz) for b in list5]
 
 #megamultipleslist = zip(multipleslist3, multipleslist5)
 
