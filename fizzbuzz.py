@@ -49,8 +49,8 @@ numbers = input("How many numbers shall we print?")
 fizz = input("For multiples of what number shall we print 'Fizz'? ")
 buzz = input("For multiples of what number shall we print 'Buzz'? ")
 
-list3 = range(1, 101)
-list5 = range(1, 101)
+list3 = range(1, 105)
+list5 = range(1, 105)
 
 multipleslist3 = [a * int(fizz) for a in list3]
 multipleslist5 = [b * int(buzz) for b in list5]
