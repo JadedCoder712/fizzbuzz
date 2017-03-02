@@ -47,24 +47,23 @@ Buzz
 
 numbers = 25   #input("How many numbers shall we print?")
 
-list3 = (1, 1000000)
-list5 = (1, 1000000)
+list3 = range(1, 101)
+list5 = range(1, 101)
 
 multipleslist3 = [a * 3 for a in list3]
 multipleslist5 = [b * 5 for b in list5]
 
-megamultipleslist = zip(multipleslist3, multipleslist5)
+#megamultipleslist = zip(multipleslist3, multipleslist5)
 
 mylist = range(1, int(numbers) + 1)
 
-while mylist == megamultipleslist:
-    print("hi")
 
-
-
-
-
-
-
-
-
+for x in mylist:
+    if x in multipleslist3 and not multipleslist5:
+        print("Fizz")
+    if x in multipleslist3 and multipleslist5:
+        print("FizzBuzz")
+    if x not in multipleslist3 and not multipleslist5:
+        print(x)
+    elif x in multipleslist5 and not multipleslist3:
+        print("Buzz")
